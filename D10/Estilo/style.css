@@ -81,9 +81,6 @@ header > p {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
 
-p{
-    text-indent: 3ch;
-}
 
 ul {
     list-style: symbols(U+02713); 
@@ -120,7 +117,33 @@ main img {
 }
 
 main img.pequena {
-    width: 50%;
+    max-width: 350px;
     margin: auto;
     display: block;
+}
+
+main p{
+    margin: 15px 0px;
+    text-indent: 3ch;
+    text-align: justify;
+    line-height: 2em; /*Altura horizontal entre linhas*/
+    font-size: 1em;
+}
+
+main strong {
+    font-weight: bold;
+    color: var(--cor4);
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
 }
