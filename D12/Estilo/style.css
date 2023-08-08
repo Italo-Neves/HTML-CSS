@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 @font-face {
     font-family: 'Sriracha';
     src: url('../Fontes/Sriracha-Regular.ttf') format('opentype');
@@ -12,6 +17,11 @@
     font-weight: normal;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 header{
     background:black;
     background-size:cover ;
@@ -21,28 +31,58 @@ header{
     position: relative;
 }
 
-header a {
+a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     color: #ffffff;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 header h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
     font-family: Passion-One-Bold;
     font-size: 5em;
+}
+
+header p {
+   padding-bottom: 50px; 
 }
 
 main {
     font-family: Sriracha;
 }
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: #ffffff;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(78, 78, 78);
+    color: #ffffff;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.199);
+    width: 400px;
+}
+
 footer {
     background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     color: #ffffff;
+    padding: 10px;
 }
 
-footer a {
-    text-decoration: none;
-    color: #ffffff;
-}
